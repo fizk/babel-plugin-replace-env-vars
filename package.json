@@ -1,0 +1,20 @@
+{
+  "name": "bebel-plugin-env-replace",
+  "version": "1.0.0",
+  "description": "Replaces constants in code with env value if available",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "install": "npm run build:dist",
+    "build:dist": "babel --presets=es2015 src --out-dir lib"
+  },
+  "author": "Einar Valur",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babylon": "^6.18.0"
+  }
+}
