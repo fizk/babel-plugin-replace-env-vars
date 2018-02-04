@@ -199,5 +199,4 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/osx,node,windows,intellij,sublimetext
 
 # Project
-lib
 package-lock.json
