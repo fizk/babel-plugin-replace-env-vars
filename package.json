@@ -8,13 +8,19 @@
   },
   "scripts": {
     "install": "npm run build:dist",
-    "build:dist": "babel --presets=es2015 src --out-dir lib"
+    "build:dist": "babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "author": "Einar Valur",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.0.0-beta.42",
-    "@babel/preset-es2015": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.42",
     "babylon": "^6.18.0"
   }
 }
